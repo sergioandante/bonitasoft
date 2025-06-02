@@ -1,0 +1,54 @@
+# Bonita Camp - Ejercicio 3 🏝
+
+## Avance del proyecto 📈
+
+Este repositorio contiene el avance del **Ejercicio 3 - Agregación de datos y especificación de contratos** de Bonita Camp. El objetivo principal de esta etapa es continuar la implementación del proceso de solicitud de vacaciones con:
+
+✅ **Creación del Modelo de Datos de Negocio (BDM)**  
+- Se creó el objeto `SolicitudVacaciones` con los atributos:
+  - `solicitanteId: Long (Requerido)`
+  - `fechaInicio: Date only (Requerido)`
+  - `numeroDias: Integer (Requerido)`
+  - `estaAprobado: Boolean (Opcional)`
+- Se desplegó el BDM correctamente.
+
+✅ **Definición de la Variable de Negocio `solicitud`**  
+- Se declaró la variable de negocio `solicitud` de tipo `SolicitudVacaciones` en la pool del proceso `DiagramaSolicitudVacaciones (2.0.0)`.
+
+✅ **Generación del Contrato de Instanciación del Proceso**  
+- Se creó un contrato que incluye los atributos `fechaInicio` y `numeroDias` (se omite `solicitanteId` y `estaAprobado`).
+
+✅ **Inicialización Automática del `solicitanteId`**  
+- Se modificó el script de inicialización para recuperar automáticamente el `solicitanteId` usando el iniciador del proceso.
+
+✅ **Contrato de la Tarea "Validar Solicitud"**  
+- Se creó un contrato que incluye el atributo `estaAprobado` para capturar la decisión del validador.
+
+✅ **Configuración de Condición de Transición**  
+- Se configuró la transición "Sí" para que se active cuando `solicitud.estaAprobado == true`.
+
+---
+
+## Próximos pasos 🚀
+🔜 Creación de formularios personalizados para capturar datos de forma más visual y funcional.  
+🔜 Pruebas completas del proceso para asegurar su correcto funcionamiento.
+
+---
+
+## Ejecución 🏃
+1. Abrir Bonita Studio y cargar el proyecto.
+2. Desplegar el modelo de datos de negocio (BDM).
+3. Ejecutar el proceso y completar los formularios generados automáticamente.
+
+---
+
+## Notas 📝
+- Se debe respetar la sintaxis y los nombres técnicos al pie de la letra (evitando espacios, acentos, etc.).
+- Se debe actualizar y desplegar el BDM tras cada cambio.
+- En esta versión se ha duplicado el diagrama original para trabajar en la versión `2.0.0`.
+
+---
+
+## Contacto 📬
+Bonita Camp 🏝 | adoption@bonitasoft.com | [bonitasoft-community](https://community.bonitasoft.com/)
+
